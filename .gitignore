@@ -40,5 +40,5 @@ venv/
 .DS_Store
 Thumbs.db
 
-
-
+#忽略用户名和密码
+_credentials.py

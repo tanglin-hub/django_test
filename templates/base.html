@@ -51,6 +51,12 @@
     </style>
 </head>
 
+<!-- search-->
+<form role="search" method="get" id="searchform" action="{% url 'blog:search' %}">
+    <input type="search" name="q" placeholder="搜索"required>
+    <button type="submit"><span class="ion-ios-search-strong"></span></button>
+</form>
+
 <body>
 <div class="container">
     <header id="site-header">
@@ -120,7 +126,7 @@
                 {% show_tags %}
                 
                 <div class="rss">
-                    <a href=""><span class="ion-social-rss-outline"></span> RSS 订阅</a>
+                    <a href="{% url 'rss' %}"><span class="ion-social-rss-outline"></span> RSS 订阅</a>
                 </div>
             </aside>
         </div>
